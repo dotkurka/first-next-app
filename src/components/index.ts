@@ -21,3 +21,7 @@ export { default as Profile } from './Profile/Profile';
 export { default as GoogleSignIn } from './GoogleSignIn/GoogleSignIn';
 
 export { default as SignIn } from './SignIn/SignIn';
+
+export { default as SignInNavButton } from './SignInNavButton/SignInNavButton';
+
+export { default as Home } from './Home/Home';

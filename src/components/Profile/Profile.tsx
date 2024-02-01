@@ -4,7 +4,7 @@ import type { ProfileProps } from 'src/components/Profile/types';
 
 export default function Profile({ user }: ProfileProps) {
   return (
-    <div className='flex flex-col max-w-[400px] w-full rounded-2xl bg-base-100 px-5'>
+    <div className='flex flex-col max-w-[400px] w-full h-full rounded-2xl bg-base-100 px-5'>
       <p className='self-center uppercase text-xl'>Welcom</p>
       <Avatar className='w-full max-w-[250px] self-center mb-10' imageUrl={user?.image} />
       <div className='join join-vertical'>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useSession, signOut } from 'next-auth/react';
 
-import { UserDropDown } from 'src/components';
+import { SignInNavButton, UserDropDown } from 'src/components';
 
 import type { NavigationProps } from 'src/components/Navigation/types';
 
@@ -27,9 +27,7 @@ export default function Navigation({ navItem }: NavigationProps) {
       {session.data?.user ? (
         <UserDropDown logOut={() => signOut()} user={session.data.user} />
       ) : (
-        <Link className='btn btn-outline btn-primary text-base' href='/sign-in'>
-          Sign In
-        </Link>
+        <SignInNavButton />
       )}
     </div>
   );

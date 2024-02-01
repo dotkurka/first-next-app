@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: PropsWithChildren) {
-  return <div className='mt-5 px-5 flex justify-center'>{children}</div>;
+  return <div className='mt-5 px-5 min-h-screen flex justify-center'>{children}</div>;
 }

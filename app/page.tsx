@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div> Hello my first Next App</div>;
+import { Home } from 'src/components';
+
+export default function HomePage() {
+  return <Home />;
 }
